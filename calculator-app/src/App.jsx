@@ -6,7 +6,7 @@ import Button from './components/Button.jsx';
 import CalcProvider from './components/CalcContext.jsx';
 // Styling
 import './styles/index.css'
-
+// Button Data
 const ButtonMetadata = [
   [
     {label: 'π', styleClass: 'sym'},
