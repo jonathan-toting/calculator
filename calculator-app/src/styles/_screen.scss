@@ -37,3 +37,18 @@
         border-bottom-right-radius: 1.2rem;
     }
 }
+
+.flicker {
+    animation: flicker 80ms; // Pauses at end frame
+}
+
+@keyframes flicker {
+    from {
+        width: 90%;
+        background-color: #C7F9CC;
+    }
+    to {
+        width: 89%;
+        background-color: #eaffec;
+    }
+}

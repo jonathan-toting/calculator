@@ -4,8 +4,6 @@ import Screen from './components/Screen.jsx';
 import ButtonGrid from './components/ButtonGrid.jsx';
 import Button from './components/Button.jsx';
 import CalcProvider from './components/CalcContext.jsx';
-// Styling
-import './styles/index.css'
 // Button Data
 const ButtonMetadata = [
   [
@@ -49,7 +47,7 @@ function App() {
             {ButtonMetadata.map((row, rowIndex) => (
               <div key={rowIndex} className='grid-row'>
                 {row.map((button, buttonIndex) => (
-                  <Button btnKey={buttonIndex} btnStyle={button.styleClass} btnValue={button.label} />
+                  <Button key={buttonIndex} btnKey={buttonIndex} btnStyle={button.styleClass} btnValue={button.label} />
                 ))}
               </div>
             ))}
